@@ -3,7 +3,7 @@ import requests
 from PIL import Image
 import io
 
-API_ENDPOIMT = 'http://127.0.0.1:3000/predict'
+API_ENDPOIMT = 'http://127.0.0.1:8000/predict'
 
 def st_canvas(fill_color, stroke_width, stroke_color, background_color, height, width, drawing_mode,key):
     from streamlit_drawable_canvas import st_canvas as st_canvas_component

@@ -13,10 +13,12 @@ import io
 
 input_size = 28*28
 
-model  = torch.load("mnist_model.pth")
+# model  = torch.load("mnist_model.pth")
+model = torch.load("mnist_model.pth", map_location=torch.device('cpu'))
 model.eval()
 model.to("cpu")
 
+## Canalizar la imagen de entrada
 transform = transforms.Compose([
     transforms.Grayscale(num_output_channels=1), # Convertir a escala de grises
     transforms.Resize((28, 28)), # Cambppiar tamaño a 28x28
