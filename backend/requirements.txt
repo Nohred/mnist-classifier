@@ -11,10 +11,5 @@ torchvision==0.20.1
 # Procesamiento de imágenes
 Pillow==10.1.0
 
-# Frontend Streamlit
-streamlit==1.43.2
-streamlit-drawable-canvas==0.9.3
-requests==2.32.3
-
 # Utilidades
 numpy>=2.0.1
